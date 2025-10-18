@@ -62,8 +62,7 @@ export default class KrokiPlugin extends Plugin {
         // per: https://docs.kroki.io/kroki/setup/encode-diagram/#javascript
         const data = new TextEncoder().encode(source);
         const compressed = pako.deflate(data, { level: 9 });
-        const encodedSource = Buffer.from(compressed)
-            .toString('base64')
+        const encodedSource = btoa(String.fromCharCode(...compressed))
             .replace(/\+/g, '-').replace(/\//g, '_');
 
         const img = document.createElement("img");

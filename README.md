@@ -28,4 +28,4 @@ See [kroki-test.md](kroki-test.md) for examples of each of the currently support
 - Clone this repo
 - `npm i` or `yarn` to install dependencies
 - `npm run build`  
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-kroki/`.
+- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-kroki/`. 
